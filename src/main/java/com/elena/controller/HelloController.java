@@ -1,4 +1,4 @@
-package com.elena.comm.controller;
+package com.elena.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +12,7 @@ public class HelloController extends AbstractController{
 	protected ModelAndView handleRequestInternal(HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
 
-		ModelAndView model = new ModelAndView("HelloWorldPage");
+		ModelAndView model = new ModelAndView("HelloWorld");
 		model.addObject("msg", "hello world");
 
 		return model;
